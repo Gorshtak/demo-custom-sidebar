@@ -1,0 +1,3 @@
+<chat-content *ngIf="sizeDetect.shouldShowSplitPane()"></chat-content>
+<chat-info *ngIf="showChatInfo()"></chat-info>
+<ion-router-outlet [class.desktop]="sizeDetect.shouldShowSplitPane()"></ion-router-outlet>

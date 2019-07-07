@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>chat-tabs</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <app-groups *ngIf="selectedTab === TABS.GROUPS"></app-groups>
+    <app-directs *ngIf="selectedTab === TABS.DIRECTS"></app-directs>
+    <app-patients *ngIf="selectedTab === TABS.PATIENTS"></app-patients>
+</ion-content>
+
+<ion-footer>
+    <ion-buttons slot="start">
+        <ion-button (click)="selectTab(TABS.GROUPS)">
+            Groups
+        </ion-button>
+        <ion-button (click)="selectTab(TABS.DIRECTS)">
+            Directs
+        </ion-button>
+        <ion-button (click)="selectTab(TABS.PATIENTS)">
+            Patients
+        </ion-button>
+    </ion-buttons>
+</ion-footer>

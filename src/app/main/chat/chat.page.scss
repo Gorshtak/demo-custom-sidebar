@@ -1,0 +1,12 @@
+:host {
+    flex-direction: row;
+    chat-content {
+        flex: 2;
+    }
+    chat-info {
+        flex: 1;
+    }
+    .desktop {
+        display: none;
+    }
+}

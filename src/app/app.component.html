@@ -1,3 +1,8 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+    <ion-split-pane>
+        <ion-menu [disabled]="!sizeDetect.shouldShowSplitPane()">
+            <app-chat-tabs></app-chat-tabs>
+        </ion-menu>
+        <ion-router-outlet main></ion-router-outlet>
+    </ion-split-pane>
 </ion-app>

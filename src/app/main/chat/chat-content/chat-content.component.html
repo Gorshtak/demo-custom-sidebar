@@ -1,0 +1,12 @@
+<ion-header>
+    <ion-toolbar (click)="toggleChatInfo()">
+        <ion-button *ngIf="!size.shouldShowSplitPane()"
+                    (click)="goBack($event)">
+            Back
+        </ion-button>
+        <ion-title>Chat content</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    chat content content
+</ion-content>
